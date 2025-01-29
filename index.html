@@ -4,25 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Liter&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     
-    <form class="book-form" action="">
-        <label for="title">Title</label>
-        <input type="text" id="title" placeholder="Title">
-
-        <label for="author">Author</label>
-        <input type="text" id="author" placeholder="Author">
-
-        <label for="pages">Pages</label>
-        <input type="text" id="pages" placeholder="pages">
-
-        <label for="read">Read</label>
-        <input type="text" id="read" placeholder="read">
-
-        <button type="button" id="btn">Submit</button>
-    </form>
+    
+    <main>
+        <dialog class="modal" id="modal">
+            <form class="book-form" action="" method="dialog">
+                <div class="div-space">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" placeholder="Title" required>
+                </div>
+                <div class="div-space">
+                    <label for="author">Author</label>
+                    <input type="text" id="author" placeholder="Author" required>
+                </div>
+                <div class="div-space">
+                    <label for="pages">Pages</label>
+                    <input type="number" id="pages" placeholder="pages" required>
+                </div>
+                <div >
+                    <input type="radio" id="read" placeholder="read" required>
+                    <label for="read">Read</label>
+                </div>
+                <button type="button" id="submit-btn">Submit</button>
+            </form>
+        </dialog>
+        <button class="add-btn">Add book</button>
+        
+    </main>
     <script src="script.js"></script>
 </body>
 </html>
