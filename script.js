@@ -39,7 +39,6 @@ function addBookToLibrary(){
     
     if(titleValue == "" && authorValue == "" && pagesValue == ""){
         alert("Please fill in the form")
-        myLibrary.pop()
     }
 
     let book = new Book(titleValue, authorValue, pagesValue, readValue)
